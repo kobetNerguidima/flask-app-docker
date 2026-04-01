@@ -1,10 +1,11 @@
+
 from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello DevOps - Docker CI Pipeline!"
+    return "Hello ESTM - Mon premier pipeline CI/CD fonctionne !"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
